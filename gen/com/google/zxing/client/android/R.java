@@ -36,10 +36,12 @@ public final class R {
         public static final int viewfinder_mask=0x7f060016;
     }
     public static final class drawable {
-        public static final int ic_launcher=0x7f020000;
-        public static final int launcher_icon=0x7f020001;
-        public static final int share_via_barcode=0x7f020002;
-        public static final int shopper_icon=0x7f020003;
+        public static final int ic_action_search=0x7f020000;
+        public static final int ic_launcher=0x7f020001;
+        public static final int launcher_icon=0x7f020002;
+        public static final int share_via_barcode=0x7f020003;
+        public static final int shopper_icon=0x7f020004;
+        public static final int splash=0x7f020005;
     }
     public static final class id {
         /**  Messages IDs 
@@ -61,6 +63,7 @@ public final class R {
         public static final int help_contents=0x7f07001f;
         public static final int image_view=0x7f07001e;
         public static final int launch_product_query=0x7f070004;
+        public static final int menu_settings=0x7f07002d;
         public static final int meta_text_view=0x7f070017;
         public static final int meta_text_view_label=0x7f070016;
         public static final int networkStatus=0x7f070022;
@@ -91,16 +94,19 @@ public final class R {
         public static final int viewfinder_view=0x7f07000d;
     }
     public static final class layout {
-        public static final int bookmark_picker_list_item=0x7f030000;
-        public static final int capture=0x7f030001;
-        public static final int encode=0x7f030002;
-        public static final int help=0x7f030003;
-        public static final int main=0x7f030004;
+        public static final int activity_main=0x7f030000;
+        public static final int bookmark_picker_list_item=0x7f030001;
+        public static final int capture=0x7f030002;
+        public static final int encode=0x7f030003;
+        public static final int help=0x7f030004;
         public static final int network=0x7f030005;
         public static final int search_book_contents=0x7f030006;
         public static final int search_book_contents_header=0x7f030007;
         public static final int search_book_contents_list_item=0x7f030008;
         public static final int share=0x7f030009;
+    }
+    public static final class menu {
+        public static final int activity_main=0x7f0a0000;
     }
     public static final class raw {
         public static final int beep=0x7f050000;
@@ -143,7 +149,7 @@ public final class R {
         public static final int contents_phone=0x7f080022;
         public static final int contents_sms=0x7f080023;
         public static final int contents_text=0x7f080024;
-        public static final int hello=0x7f08007c;
+        public static final int hello_world=0x7f08007c;
         public static final int history_clear_text=0x7f080025;
         public static final int history_email_title=0x7f080026;
         public static final int history_send=0x7f080027;
@@ -220,6 +226,7 @@ public final class R {
         public static final int sbc_name=0x7f08006e;
         public static final int share_name=0x7f08006f;
         public static final int title_about=0x7f080070;
+        public static final int title_activity_main=0x7f08007d;
         public static final int wa_name=0x7f080071;
         public static final int wifi_changing_network=0x7f080072;
         public static final int wifi_connect_failed=0x7f080078;
@@ -232,10 +239,12 @@ public final class R {
         public static final int wifi_type_label=0x7f08007a;
         public static final int zxing_url=0x7f08007b;
     }
+    public static final class style {
+        public static final int AppTheme=0x7f090000;
+    }
     public static final class xml {
-        public static final int phonegap=0x7f040000;
-        public static final int plugins=0x7f040001;
-        public static final int preferences=0x7f040002;
+        public static final int config=0x7f040000;
+        public static final int preferences=0x7f040001;
     }
     public static final class styleable {
         /** Attributes that can be used with a ViewfinderView.
