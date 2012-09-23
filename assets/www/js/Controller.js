@@ -3,7 +3,7 @@ function Controller() {
 
 	var $this = this;
 	
-	$('body').append('<p>Controller created</p>');
+	//$('body').append('<p>Controller created</p>');
 
 	this.test = function() {
 
@@ -44,22 +44,24 @@ function Controller() {
 		$.ajax({
 			  url: 'http://ikon.richards19.com/api/barcodelookup',
 			  dataType: 'json',
-			  data: { barcode: barcode },
+			  data: { 
+				  barcode: barcode 
+			  },
 			  success: function(data) {
 					
 					//alert(data.result.msg );
 					
-					$('#scanresults').append( 'Barcode: ' + barcode + '<br />' );
-					$('#scanresults').append( 'Message: ' + data.result.msg + '<br />' );
-					$('#scanresults').append( 'Description: ' + data.Description + '<br />' );
-					$('#scanresults').append( 'CostPrice: ' + data.CostPrice + '<br />' );
-					$('#scanresults').append( 'filton_stock: ' + data.filton_stock + '<br />' );
-					$('#scanresults').append( 'Stock: ' + data.Stock + '<br />' );
-					$('#scanresults').append( 'DeptName: ' + data.DeptName + '<br />' );					
-					
+				  $('#scanresults .message').html(data.result.msg);
+				  $('#scanresults .barcode').html(barcode);
+				  $('#scanresults .description').html(data.Description);
+				  $('#scanresults .costprice').html(data.CostPrice);
+				  $('#scanresults .filtonstock').html(data.filton_stock);
+				  $('#scanresults .stock').html(data.Stock);
+				  $('#scanresults .deptname').html(data.DeptName);
+				
 			},
 			error: function(){
-				alert("System lookup error");
+				alert("System lookup error (network)");
 			}
 		});
 		
